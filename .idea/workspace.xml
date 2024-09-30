@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8868d4d-aaf3-4af5-9cc8-947e0be5b0a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataproviders/DataProviderBoards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/files_csv/data_boardTitles.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BoardsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BoardsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PersonalBoardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PersonalBoardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BoardsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BoardsTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +49,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -62,6 +68,9 @@
     &quot;accountId&quot;: &quot;7f288705-c22f-4647-87bc-edc87d1b9f29&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -86,6 +95,12 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\QA_44\Qa44_Trello\src\main\resources\files_csv" />
+      <recent name="D:\QA_44\Qa44_Trello\src\main\resources" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.BoardsTests.deleteBoardPositiveTest">
     <configuration name="BoardsTests.createBoardNegative" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
