@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8868d4d-aaf3-4af5-9cc8-947e0be5b0a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataproviders/DataProviderBoards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/files_csv/data_boardTitles.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/manager/PropertiesReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/login.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BoardsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BoardsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -101,7 +98,7 @@
       <recent name="D:\QA_44\Qa44_Trello\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BoardsTests.deleteBoardPositiveTest">
+  <component name="RunManager" selected="Gradle.LoginTests.loginTest">
     <configuration name="BoardsTests.createBoardNegative" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -200,9 +197,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LoginTests.loginTest" />
         <item itemvalue="Gradle.BoardsTests.deleteBoardPositiveTest" />
         <item itemvalue="Gradle.BoardsTests.createBoardPositive" />
-        <item itemvalue="Gradle.LoginTests.loginTest" />
         <item itemvalue="Gradle.BoardsTests.createBoardNegative" />
       </list>
     </recent_temporary>
