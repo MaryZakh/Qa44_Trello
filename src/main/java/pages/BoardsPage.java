@@ -23,6 +23,11 @@ public class BoardsPage extends BasePage{
     @FindBy(xpath = "//button[@data-testid='create-board-submit-button']")
     WebElement btnCreateSubmit;
 
+    @FindBy(xpath = "//span[@class='QMKgZFIlTLiEJN']")
+    WebElement popUpBoardDeleted;
+
+
+
     public BoardsPage typeBoardTitle(BoardDTO board){
         btnCreateBoard.click();
         inputBoardTitle.sendKeys(board.getBoardTitle());
@@ -30,6 +35,7 @@ public class BoardsPage extends BasePage{
     }
 
     public PersonalBoardPage clickBtnCreateSubmitPositive(){
+        pause(500);
         btnCreateSubmit.click();
         return new PersonalBoardPage(driver);
     }
@@ -43,4 +49,8 @@ public class BoardsPage extends BasePage{
         return isElementClickable(btnCreateSubmit,3);
     }
 
+    public boolean isTextPopUpPresent(){
+        return isTextInElementPresent(popUpBoardDeleted,"Board deleted.",5);
+
+    }
 }
