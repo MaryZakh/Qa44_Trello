@@ -4,8 +4,10 @@ import dataproviders.DataProviderBoards;
 import dto.BoardDTO;
 import dto.UserDTO;
 import manager.ApplicationManager;
+import manager.TestNGListener;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.BoardsPage;
 import pages.HomePage;
@@ -13,6 +15,8 @@ import pages.PersonalBoardPage;
 
 import java.lang.reflect.Method;
 import java.util.Random;
+
+@Listeners(TestNGListener.class)
 
 public class BoardsTests extends ApplicationManager {
 
