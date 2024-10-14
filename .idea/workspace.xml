@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8868d4d-aaf3-4af5-9cc8-947e0be5b0a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/TestNGListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/WDListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ProfileAndVisibilityPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/photos/cat3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BoardsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BoardsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BoardsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BoardsPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +67,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/pages/BoardsPage.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -84,21 +86,25 @@
     "Gradle.BoardsTests.createBoardPositive.executor": "Run",
     "Gradle.BoardsTests.deleteBoardPositiveTest.executor": "Run",
     "Gradle.LoginTests.loginTest.executor": "Run",
+    "Gradle.ProfileTests.changeProfilePhotoPositiveTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/QA_44/Qa44_Trello_111",
+    "last_opened_file_path": "D:/QA_44/Qa44_Trello/src/main/java/photos",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\QA_44\Qa44_Trello\src\main\java\photos" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\QA_44\Qa44_Trello\src\main\java" />
       <recent name="D:\QA_44\Qa44_Trello\src\main\resources\files_csv" />
       <recent name="D:\QA_44\Qa44_Trello\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BoardsTests.createBoardNegative">
+  <component name="RunManager" selected="Gradle.ProfileTests.changeProfilePhotoPositiveTest">
     <configuration name="BoardsTests.createBoardNegative" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -195,8 +201,33 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="ProfileTests.changeProfilePhotoPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.ProfileTests.changeProfilePhotoPositiveTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ProfileTests.changeProfilePhotoPositiveTest" />
         <item itemvalue="Gradle.BoardsTests.createBoardNegative" />
         <item itemvalue="Gradle.LoginTests.loginTest" />
         <item itemvalue="Gradle.BoardsTests.deleteBoardPositiveTest" />
@@ -214,16 +245,5 @@
       <updated>1727107764395</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/BasePage.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
