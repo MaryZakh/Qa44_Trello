@@ -1,6 +1,7 @@
 package pages;
 
 import dto.BoardDTO;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -66,4 +67,11 @@ public class BoardsPage extends BasePage{
         btnManageAccount.click();
         return new ProfileAndVisibilityPage(driver);
     }
+
+    public PersonalBoardPage clickElement2ListBoards() {
+        driver.findElement(By.xpath("//ul[@class='boards-page-board-section-list']/li[2]")).click();
+        return new PersonalBoardPage(driver);
+    }
+
+
 }

@@ -15,7 +15,7 @@ public class BasePage {
         BasePage.driver = driver;
     }
 
-    public void pause(int time) {
+    public static void pause(int time) {
         try {
             Thread.sleep(time);
         } catch (InterruptedException e) {
@@ -46,6 +46,12 @@ public class BasePage {
         }
 
     }
+
+    public void clickWait(WebElement element, int time){
+        new WebDriverWait(driver,Duration.ofSeconds(time))
+                .until(ExpectedConditions.elementToBeClickable(element)).click();
+    }
+
 
 
 }

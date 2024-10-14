@@ -1,5 +1,6 @@
 package manager;
 
+import dto.UserDTO;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,6 +15,8 @@ import java.util.concurrent.TimeUnit;
 
 import manager.WDListener;
 
+import static manager.PropertiesReader.getProperty;
+
 public class ApplicationManager {
     private WebDriver driver;
     private ChromeOptions chromeOptions;
@@ -25,6 +28,12 @@ public class ApplicationManager {
     public WebDriver getDriver() {
         return driver;
     }
+
+    protected UserDTO user = UserDTO.builder()
+            .email(getProperty("login.properties","email"))
+            .password(getProperty("login.properties", "password"))
+            .build();
+
 
     @BeforeMethod
     public void setUp() {
@@ -41,7 +50,7 @@ public class ApplicationManager {
 
     @AfterMethod
     public void tearDown(){
-//        if (driver!=null)
-//            driver.quit();
+        if (driver!=null)
+            driver.quit();
     }
 }

@@ -5,6 +5,8 @@ import dto.BoardDTO;
 import dto.UserDTO;
 import manager.ApplicationManager;
 import manager.TestNGListener;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -14,16 +16,20 @@ import pages.HomePage;
 import pages.PersonalBoardPage;
 
 import java.lang.reflect.Method;
+
+import java.util.List;
 import java.util.Random;
+
+import static pages.BoardsPage.pause;
 
 @Listeners(TestNGListener.class)
 
 public class BoardsTests extends ApplicationManager {
 
-    UserDTO user = UserDTO.builder()
-            .email("z0559882272@gmail.com")
-            .password("Mmar123456$")
-            .build();
+//    UserDTO user = UserDTO.builder()
+//            .email("z0559882272@gmail.com")
+//            .password("Mmar123456$")
+//            .build();
 
     BoardsPage boardsPage = new BoardsPage(getDriver());
 
@@ -92,4 +98,19 @@ public class BoardsTests extends ApplicationManager {
         }
         ;
     }
-}
+
+
+    @Test
+    public void deleteAllBoards(){
+
+        List<WebElement> listBoards = getDriver().findElements(
+                By.xpath("//li[@class='boards-page-board-section-list-item']"));
+        pause(10);
+        System.out.println("size of list --> "+ listBoards.size());
+//        for (int i = 0; i <listBoards.size()-2 ; i++) {
+//            boardsPage.clickElement2ListBoards().deleteBoard();
+//            pause(5);
+
+        }
+    }
+

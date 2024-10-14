@@ -35,7 +35,16 @@ public class PersonalBoardPage extends BasePage {
     }
 
 
-    public BoardsPage deleteBoard(BoardDTO board) {
+    public BoardsPage deleteBoard(BoardDTO boardDTO) {
+        btnDots.click();
+        btnCloseBoard.click();
+        btnCloseConfirm.click();
+        btnDeleteBoard.click();
+        btnDeleteBoardConfirm.click();
+        return new BoardsPage(driver);
+    }
+
+    public BoardsPage deleteBoard() {
         btnDots.click();
         btnCloseBoard.click();
         btnCloseConfirm.click();
