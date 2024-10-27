@@ -26,6 +26,8 @@ public class PersonalBoardPage extends BasePage {
     WebElement btnDeleteBoard;
     @FindBy(xpath = "//button[@data-testid='close-board-delete-board-confirm-button']")
     WebElement btnDeleteBoardConfirm;
+    @FindBy(xpath = "//div[@class='qsCZSrobO7JoSv']")
+    WebElement logo;
 
 
 
@@ -35,7 +37,7 @@ public class PersonalBoardPage extends BasePage {
     }
 
 
-    public BoardsPage deleteBoard(BoardDTO boardDTO) {
+    public BoardsPage deleteBoard(BoardDTO board) {
         btnDots.click();
         btnCloseBoard.click();
         btnCloseConfirm.click();
@@ -43,13 +45,14 @@ public class PersonalBoardPage extends BasePage {
         btnDeleteBoardConfirm.click();
         return new BoardsPage(driver);
     }
-
     public BoardsPage deleteBoard() {
         btnDots.click();
         btnCloseBoard.click();
         btnCloseConfirm.click();
         btnDeleteBoard.click();
         btnDeleteBoardConfirm.click();
+        logo.click();
+        pause(3000);
         return new BoardsPage(driver);
     }
 }

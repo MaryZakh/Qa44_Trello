@@ -2,7 +2,7 @@ package tests;
 
 import dataproviders.DataProviderBoards;
 import dto.BoardDTO;
-import dto.UserDTO;
+
 import manager.ApplicationManager;
 import manager.TestNGListener;
 import org.openqa.selenium.By;
@@ -52,7 +52,7 @@ public class BoardsTests extends ApplicationManager {
                 .boardTitle("QA44-" + i)
                 .build();
 
-        logger.info(method.getName()+" starts with board title--> "+board.getBoardTitle());
+        logger.info(method.getName() + " starts with board title--> " + board.getBoardTitle());
         //HomePage homePage = new HomePage(getDriver());
         Assert.assertTrue(
 //               homePage.clickBtnLogin()
@@ -96,21 +96,21 @@ public class BoardsTests extends ApplicationManager {
         } else {
             Assert.fail("board isn`t create");
         }
-        ;
+
     }
 
 
     @Test
-    public void deleteAllBoards(){
-
-        List<WebElement> listBoards = getDriver().findElements(
+    public void deleteAllBoard() {
+        pause(3000);
+        List<WebElement> listBoars = getDriver().findElements(
                 By.xpath("//li[@class='boards-page-board-section-list-item']"));
-        pause(10);
-        System.out.println("size of list --> "+ listBoards.size());
-//        for (int i = 0; i <listBoards.size()-2 ; i++) {
-//            boardsPage.clickElement2ListBoards().deleteBoard();
-//            pause(5);
-
+        System.out.println("size list --> " + listBoars.size());
+        //boardsPage.clickElement2ListBoards().deleteBoard();
+        for (int i = 0; i < listBoars.size()-2; i++) {
+            boardsPage.clickElement2ListBoards().deleteBoard();
+            pause(5000);
         }
     }
+}
 
